@@ -2,10 +2,12 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const port = 3000;
+// Serving files from 'public' directory.
 app.use(express.static(__dirname + 'public'));
 
 // These are the routes defined for GET method
 app.get('/', (req, res) => {
+    // Transfers the file at given path
     res.sendFile(path.join(__dirname + '/public/searchBar.html'));
 })
 
@@ -21,4 +23,5 @@ app.get('/microphone.png', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/microphone.png'))
 })
 
+// Binds and Listens for connections on specified host & port.
 app.listen(process.env.PORT || port, () => console.log(`App listening on port ${port}!`));
