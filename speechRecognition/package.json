@@ -1,0 +1,18 @@
+{
+  "name": "speechrecognition",
+  "version": "1.0.0",
+  "description": "convert sppech to text ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "voice",
+    "Recognition"
+  ],
+  "author": "Vanguard",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
