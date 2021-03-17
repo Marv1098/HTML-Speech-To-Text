@@ -9,7 +9,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/searchBar.html'));
 })
 
-// CSS
 app.get('/stylesheet.css', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/stylesheet.css'))
 })
