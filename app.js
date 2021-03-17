@@ -4,7 +4,7 @@ const path = require('path');
 const port = 3000;
 app.use(express.static(__dirname + 'public'));
 
-// HTML
+// These are the routes defined for GET method
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/searchBar.html'));
 })
