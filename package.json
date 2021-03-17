@@ -1,0 +1,22 @@
+{
+  "name": "vanguard-speechrecognition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marv1098/HTML-Speech-To-Text.git"
+  },
+  "author": "Marvin Tailor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marv1098/HTML-Speech-To-Text/issues"
+  },
+  "homepage": "https://github.com/Marv1098/HTML-Speech-To-Text#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
