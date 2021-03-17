@@ -25,7 +25,7 @@ describe("Testcase for VoiceSearch API", function () {
     it("should return 404 error for test(get) ", function (done) {
         chai
             .request('http://localhost:3000')
-            .get("/test")//i do not have emoloyee , i have employees
+            .get("/test")//i do not have test 
             .then(function (res) {
                 expect(res).to.have.status(404);
                 done();
