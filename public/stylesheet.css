@@ -1,7 +1,7 @@
 html {
   background-color: #2f2f2f;
 }
-
+/*This is the CSS for mobile devices*/
 @media screen and (max-width: 1199px) {
   .speechbar {
     position: fixed;
@@ -40,6 +40,7 @@ html {
     padding: 5px;
   }
 }
+/*This is the CSS for computers*/
 @media screen and (min-width: 1200px) {
   .speechbar {
     position: fixed;
