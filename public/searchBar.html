@@ -11,7 +11,20 @@
     <img class="mic" onclick="startDictation()" src="microphone.png" />
   </div>
 </form>
-<iframe name="searchFrame" src="" id="searchFrame" width="1000" height="1000"></iframe>
+<div id = iframeHolder class="iframeBox"></div>
 <script src="speechRecognition.js"></script>
 
 </html>
+
+<!-- JavaScript for iFrame to load the search query on the same page as the voice search bar -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#micSearch').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe name="searchFrame" src="" id="searchFrame" width="100%" height="605" frameBorder = "0"></iframe>');
+        }
+    });   
+});
+</script>
+
