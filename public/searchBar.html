@@ -5,13 +5,13 @@
     <link rel="stylesheet" href="/stylesheet.css">
   </head>
 
-<form id="micSearch" role="search" method="get" action="https://www.google.com/search">
+<form id="micSearch" role="search" method="get" action="https://www.bing.com/search?q=" target="searchFrame">
   <div class="speechbar">
     <input class="speech" type="text" name="q" id="transcript" placeholder="Say Something" />
     <img class="mic" onclick="startDictation()" src="microphone.png" />
   </div>
 </form>
-
+<iframe name="searchFrame" src="" id="searchFrame" width="1000" height="1000"></iframe>
 <script src="speechRecognition.js"></script>
 
 </html>
