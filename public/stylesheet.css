@@ -42,6 +42,7 @@ html {
 
   .iframeBox{
     margin: 1000px 0px 0px;
+  }
 }
 /*This is the CSS for computers*/
 @media screen and (min-width: 1200px) {
