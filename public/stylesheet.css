@@ -7,10 +7,10 @@ html {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     border: 2px solid #fff;
     border-radius: 10px;
-    width:310px;
+    width:340px;
     padding:5px;
     height: 45px;
     background-color: #e2e9f4;
@@ -20,9 +20,9 @@ html {
     position: center;
     border:0;
     background-color: #fff;
-    width:85%;
+    width:82%;
     display:inline-flex;
-    height: 95%;
+    height: 85%;
     font-size: 17px;
     border-radius: 10px;
   }
@@ -33,12 +33,15 @@ html {
 
   .speechbar img {
     position: fixed;
-    bottom: 0;
+    bottom: 1;
     right: 0;
     float:right;
-    width:30px;
+    width:40px;
     padding: 5px;
   }
+
+  .iframeBox{
+    margin: 1000px 0px 0px;
 }
 /*This is the CSS for computers*/
 @media screen and (min-width: 1200px) {
