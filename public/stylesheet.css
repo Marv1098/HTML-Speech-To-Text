@@ -5,7 +5,7 @@ html {
 @media screen and (max-width: 1199px) {
   .speechbar {
     position: fixed;
-    top: 50%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid #fff;
@@ -41,7 +41,7 @@ html {
   }
 
   .iframeBox{
-    margin: 1000px 0px 0px;
+    margin: 500px 0px 0px;
   }
 }
 /*This is the CSS for computers*/
