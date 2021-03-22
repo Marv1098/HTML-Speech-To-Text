@@ -5,18 +5,20 @@
     <link rel="stylesheet" href="/stylesheet.css">
   </head>
 
-<form id="micSearch" role="search" method="get" action="https://www.bing.com/search?q=" target="searchFrame">
-  <div class="speechbar">
-    <input class="speech" type="text" name="q" id="transcript" placeholder="Say Something" />
-    <img class="mic" onclick="startDictation()" src="microphone.png" />
-  </div>
-</form>
-<div id = iframeHolder class="iframeBox"></div>
-<script src="speechRecognition.js"></script>
+  <form id="micSearch" role="search" method="get" action="https://www.bing.com/search?q=" target="searchFrame">
+    <div class="speechbar">
+      <input class="speech" type="text" name="q" id="transcript" placeholder="Say Something" />
+      <img class="mic" onclick="startDictation()" src="microphone.png" />
+    </div>
+  </form>
+  <div id = iframeHolder class="iframeBox"></div>
 
 </html>
 
-<!-- JavaScript for iFrame to load the search query on the same page as the voice search bar -->
+<!-- JavaScript for Speech Recognition -->
+<script src="speechRecognition.js"></script>
+
+<!-- jQuery for iFrame to load the search query on the same page as the voice search bar -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
