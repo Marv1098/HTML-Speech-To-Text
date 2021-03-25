@@ -36,6 +36,20 @@ describe("Testcase for VoiceSearch API", function () {
             });
     });
 
+    it("should return status on 200 For ", function (done) {
+        chai
+            .request('http://localhost:3000')
+            .get("/stylesheet.css")
+            .then(function (res) {
+                expect(res).to.have.status(200);
+                done();
+            })
+            .catch(function (err) {
+                // throw(err);
+                done(err);
+            });
+    });
+
 })
 
 module.exports = response;
