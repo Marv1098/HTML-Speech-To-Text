@@ -10,6 +10,7 @@ function startDictation() {
     // Language: 'en-US = English US' & 'en-IN = English India to handle Accent'
     recognition.lang = "en-US";
     recognition.lang = "en-IN";
+    recognition.lang = "en-AU";
     // Starting Speech Recognition
     recognition.start();
 
