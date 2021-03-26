@@ -36,6 +36,29 @@ describe("Testcase for VoiceSearch API", function () {
             });
     });
 
+    it("should return status on 200 For ", function (done) {
+        chai
+            .request('http://localhost:3000')
+            .get("/stylesheet.css")
+            .then(function (res) {
+                expect(res).to.have.status(200);
+                done();
+            })
+            .catch(function (err) {
+                // throw(err);
+                done(err);
+            });
+    });
+
+    
+
 })
+describe('Simple test suite (with chai):', function() {
+    it('1 === 1 should be true', function() {
+        expect(1).to.equal(1);
+    });
+});
+
+
 
 module.exports = response;
