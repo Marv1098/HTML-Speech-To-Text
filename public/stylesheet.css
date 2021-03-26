@@ -3,6 +3,7 @@ html {
 }
 /*This is the CSS for mobile devices*/
 @media screen and (max-width: 1199px) {
+  /*The text header*/
   h2 {
     text-align: center;
     color: #e2e9f4;
@@ -52,12 +53,13 @@ html {
 }
 /*This is the CSS for computers*/
 @media screen and (min-width: 1200px) {
+  /*The text header*/
   h2 {
     text-align: center;
     color: #e2e9f4;
     font-family: Verdana, sans-serif;
   }
-
+  /*The outer portion of the input box*/
   .speechbar {
     margin-left: 37%;
     border: 1px solid #fff;
@@ -68,7 +70,7 @@ html {
     background-color: #e2e9f4;
     text-align: center;
   }
-
+  /*The inner portion of the input box*/
   .speechbar input {
     border:0;
     background-color: #fff;
@@ -79,17 +81,17 @@ html {
     border-radius: 10px;
     text-align: center;
   }
-
+  /*The placeholder in the input box*/
   input[type="text"]::placeholder {
     padding: 3px;
   }
-
+  /*The input button for speech to text*/
   .speechbar img {
     float: right;
     width: 30px;
     padding: 5px;
   }
-
+  /*The search output after a search is initiated*/
   .iframeBox{
     margin-top: 15px;
   }
