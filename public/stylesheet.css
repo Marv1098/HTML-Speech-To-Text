@@ -3,9 +3,14 @@ html {
 }
 /*This is the CSS for mobile devices*/
 @media screen and (max-width: 1199px) {
+  h2 {
+    text-align: center;
+    color: #e2e9f4;
+    font-family: Verdana, sans-serif;
+  }
+  /*The outer portion of the input box*/
   .speechbar {
-    position: fixed;
-    top: 4%;
+    margin: 60px 480px 480px;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid #fff;
@@ -15,22 +20,21 @@ html {
     height: 45px;
     background-color: #e2e9f4;
   }
-
+  /*The inner portion of the input box*/
   .speechbar input {
-    position: center;
     border:0;
     background-color: #fff;
     width:82%;
     display:inline-flex;
-    height: 85%;
+    height: 82%;
     font-size: 17px;
     border-radius: 10px;
   }
-
+  /*The placeholder in the input box*/
   input[type="text"]::placeholder {
     padding: 3px;
   }
-
+  /*The input button for speech to text*/
   .speechbar img {
     position: fixed;
     bottom: 1;
@@ -39,15 +43,23 @@ html {
     width:40px;
     padding: 5px;
   }
-
+  /*The search output after a search is initiated*/
   .iframeBox{
-    margin: 140px 0px 0px;
+    position: absolute;
+    top: 180px;
+    width: 100%;
   }
 }
 /*This is the CSS for computers*/
 @media screen and (min-width: 1200px) {
+  h2 {
+    text-align: center;
+    color: #e2e9f4;
+    font-family: Verdana, sans-serif;
+  }
+
   .speechbar {
-    margin-left: 38%;
+    margin-left: 37%;
     border: 1px solid #fff;
     border-radius: 10px;
     width:25%;
@@ -79,6 +91,6 @@ html {
   }
 
   .iframeBox{
-    margin-top: 5px;
+    margin-top: 15px;
   }
 }
