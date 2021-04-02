@@ -1,13 +1,15 @@
 function startDictation() {
-  if(window.hasOwnProperty('webkitSpeechRecognition')) {
-    var recognition = new webkitSpeechRecognition();
+  //if(window.hasOwnProperty('webkitSpeechRecognition')) {
+    //var recognition = new webkitSpeechRecognition();
+    var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+    var recognition = new SpeechRecognition();
 
     // Listen for single word or a phrase
     recognition.continuous = false;
     // Set false means that the interim results are finals and not changeable
     recognition.interimResults = false;
 
-    // Language: 'en-US = English US' & 'en-IN = English India to handle Accent'
+    // Language: 'en-US = English US' & 'en-IN = English India to handle Accent & 'en-AU = English Australia'
     recognition.lang = "en-US";
     recognition.lang = "en-IN";
     recognition.lang = "en-AU";
@@ -28,5 +30,5 @@ function startDictation() {
     recognition.onerror = function(e) {
       recognition.stop();
     }
-  }
+  //}
 }
